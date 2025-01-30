@@ -20,7 +20,7 @@ const ImageGridView = ({ title, description, data }) => {
                   <img
                     alt="gallery"
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-md"
-                    src={`https://raw.githubusercontent.com/Aman-Sakdasariya/G-Campus/main/src/images/source/profile-${key}.jpg`}
+                    src={`https://raw.githubusercontent.com/Aman-Sakdasariya/image/G-Campus/main/profile-${key}.jpg`}
                   />
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100 rounded-md h-full overflow-auto"> {/* Fixed height and overflow for the text container */}
                     <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
