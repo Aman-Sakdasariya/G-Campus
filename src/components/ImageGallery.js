@@ -45,7 +45,7 @@ const ImageGallery = ({ title, subTitle }) => {
                         title="Click to zoom in"
                         alt="gallery"
                         className="w-full h-full object-cover aspect-square cursor-zoom-in transition-transform duration-300 hover:scale-105"
-                        src={`https://raw.githubusercontent.com/Aman-Sakdasariya/image/G-Campus/main/${title}-${index}.jpg`}
+                        src={`https://raw.githubusercontent.com/Aman-Sakdasariya/image/main/G-Campus${title}-${index}.jpg`}
                       />
                     </div>
                   </div>
