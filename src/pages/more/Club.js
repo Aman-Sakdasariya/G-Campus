@@ -1,10 +1,6 @@
 import React from "react";
 import ImageGallery from "../../components/ImageGallery";
-
 import MemberTableView from "../../components/MemberTableView";
-
-
-
 
 const CellArrayData = [
   {
@@ -67,7 +63,7 @@ const Club = () => {
         ANTI RAGGING CELL
       </h1>
 
-    <MemberTableView  data={committeeMemberArray} DESIGNATION BATCH/>
+      <MemberTableView data={committeeMemberArray} DESIGNATION BATCH />
       <div className="flex justify-center items-center flex-col gap-10 ">
         {CellArrayData.map((item, key) => {
           return (

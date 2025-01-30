@@ -42,38 +42,39 @@ const committeeMemberArray = [
   },
 ];
 
-const title = "THE STEP PROGRAM";
-const subTitle = "AJ GROUP (DELHI)";
-const description =
-  "AJ Group Delhi is offering a program named STEP (which could stand for various things like Student Training and Employment Program, Skills Training and Enhancement Program, etc.).";
-
 const stepImageData = [
   {
-    title: title,
-    subTitle: subTitle,
-    description: description,
+    title: 'STEP GLOBAL LEADERSHIP SUMMIT',
+    subTitle: 'New York City, USA',
+    description: 'An exclusive global summit bringing together influential leaders, innovators, and change-makers to discuss and shape the future of education, technology, and community development.',
   },
   {
-    title: title,
-    subTitle: subTitle,
-    description: description,
+    title: 'TECH TALKS',
+    subTitle: 'Bangalore, India',
+    description: 'A technology-driven event bringing together industry experts, developers, and students to discuss the latest trends, innovations, and breakthroughs in the tech world.',
   },
   {
-    title: title,
-    subTitle: subTitle,
-    description: description,
+    title: 'CULTURAL FESTIVAL',
+    subTitle: 'Delhi, India',
+    description: 'A vibrant celebration of India’s diverse cultural heritage, featuring performances, workshops, exhibitions, and food stalls showcasing the richness of Indian traditions.',
   },
   {
-    title: title,
-    subTitle: subTitle,
-    description: description,
+    title: 'SPORTS CHALLENGE',
+    subTitle: 'Mumbai, India',
+    description: 'An inter-college sports competition designed to bring together athletes from various colleges to compete in a range of sports, promoting fitness and teamwork.',
   },
   {
-    title: title,
-    subTitle: subTitle,
-    description: description,
+    title: 'INNOVATION SUMMIT',
+    subTitle: 'Hyderabad, India',
+    description: 'A conference focused on the latest innovations in science, technology, and engineering. Industry leaders and entrepreneurs share insights, fostering creativity and future progress.',
+  },
+  {
+    title: 'ENVIRONMENTAL LEADERSHIP FORUM',
+    subTitle: 'Chennai, India',
+    description: 'An event focusing on sustainability, climate change, and environmental conservation. Bringing together environmental leaders and activists to discuss actionable solutions for a greener future.',
   },
 ];
+
 
 const Step = () => {
   return (

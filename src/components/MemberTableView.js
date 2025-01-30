@@ -2,8 +2,8 @@ import React from "react";
 
 const MemberTableView = ({ data, DESIGNATION, BATCH }) => {
   return (
-    <div className="h-full">
-      <div className="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-md border border-gray-200 ">
+    <div className="h-full w-full max-w-5xl mx-auto"> {/* Added max-w-5xl */}
+      <div className="w-full bg-white shadow-lg rounded-md border border-gray-200">
         <header className="px-5 py-4 border-b border-gray-100">
           <h2 className="font-semibold text-gray-800 uppercase text-center">
             COMMITTEE MEMBERS
@@ -46,7 +46,7 @@ const MemberTableView = ({ data, DESIGNATION, BATCH }) => {
                               src="https://www.pngfind.com/pngs/m/676-6764065_default-profile-picture-transparent-hd-png-download.png"
                               width="40"
                               height="40"
-                              alt="Alex Shatov"
+                              alt="Profile"
                             />
                           </div>
                           <div className="font-medium text-gray-800">
@@ -70,7 +70,7 @@ const MemberTableView = ({ data, DESIGNATION, BATCH }) => {
 
                       <td className="p-2 whitespace-nowrap ">
                         <a
-                          href="mailto:"
+                          href={`mailto:${member.connect}`}
                           className="text-lg flex justify-center items-center"
                         >
                           <svg

@@ -6,21 +6,11 @@ const ImageGallery = ({ title, subTitle }) => {
   const [zoomToggleImage, setZoomToggleImage] = useState("");
 
   useEffect(() => {
-    const handleBodyOverflow = () => {
-      document.querySelector("body").style.overflowY = "scroll";
-      document.querySelector("body").style.overflowX = "hidden";
-      document.querySelector("body").style.scrollBehavior = "smooth";
-    };
-
-    if (zoomToggle) {
-      document.querySelector("body").style.overflow = "hidden";
-    } else {
-      handleBodyOverflow();
-    }
-  }, [zoomToggle, zoomToggleImage]);
+    document.body.style.overflow = zoomToggle ? "hidden" : "auto";
+  }, [zoomToggle]);
 
   return (
-    <div>
+    <div className="flex flex-col items-center w-full max-w-5xl">
       {zoomToggle && (
         <ImageZoomView
           img={zoomToggleImage}
@@ -28,35 +18,39 @@ const ImageGallery = ({ title, subTitle }) => {
           setZoomToggle={setZoomToggle}
         />
       )}
-      <section className="text-gray-600 body-font ">
-        <div className=" px-5 py-10 mx-auto ">
-          <div className="flex flex-col text-center w-full mb-10">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-blue-600 hover:underline underline-offset-2 cursor-pointer">
+      <section className="text-gray-600 body-font w-full">
+        <div className="px-5 py-10 mx-auto">
+          <div className="flex flex-col text-center w-full mb-6">
+            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-blue-600 hover:underline underline-offset-2 cursor-pointer">
               {title || "Title"}
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-lg">
               {subTitle || "Sub Title"}
             </p>
           </div>
-          <div className="flex flex-wrap border-2 rounded-md">
-            {Array(6)
-              .fill(null)
-              .map((_, index) => (
-                <div key={index} className="lg:w-1/3 sm:w-1/2 p-4  ">
-                  <div className="flex  ">
-                    <img
-                      onClick={(e) => {
-                        setZoomToggle(!zoomToggle);
-                        setZoomToggleImage(e.target.currentSrc);
-                      }}
-                      title="Click to zoom in"
-                      alt="gallery"
-                      className="scale-100  hover:scale-105 transition-all duration-1000 aspect-square  w-full h-full object-cover object-center rounded-md cursor-zoom-in ease-linear"
-                      src={`https://raw.githubusercontent.com/Aman-Sakdasariya/G-Campus/main/src/images/source/${title}-${index}.jpg`}
-                    />
+
+          {/* Box Container with Increased Size */}
+          <div className="bg-white border rounded-xl shadow-lg p-8 sm:p-10 w-full">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+              {Array(6)
+                .fill(null)
+                .map((_, index) => (
+                  <div key={index} className="flex justify-center">
+                    <div className="w-60 h-60 sm:w-72 sm:h-72 flex items-center justify-center overflow-hidden rounded-md border">
+                      <img
+                        onClick={(e) => {
+                          setZoomToggle(true);
+                          setZoomToggleImage(e.target.currentSrc);
+                        }}
+                        title="Click to zoom in"
+                        alt="gallery"
+                        className="w-full h-full object-cover aspect-square cursor-zoom-in transition-transform duration-300 hover:scale-105"
+                        src={`https://raw.githubusercontent.com/Aman-Sakdasariya/G-Campus/main/src/images/source/${title}-${index}.jpg`}
+                      />
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
           </div>
         </div>
       </section>
