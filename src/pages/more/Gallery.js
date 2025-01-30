@@ -14,19 +14,19 @@ const GalleryArrayData = [
   },
   {
     title: "VNSGU Inter College Power Lifting Tournament",
-    subTitle: "CHAMPION: UDHNA COLLEGE",
+    subTitle: "CHAMPION: US",
   },
   {
     title: "Handicraft Competition",
     subTitle: "COLLEGE STAFF AND STUDENTS",
   },
   {
-    title: "154th GANDHI JAYANTI",
+    title: "GANDHI JAYANTI",
     subTitle: "INTERNATIONAL DAY OF NON-VIOLENCE",
   },
   {
     title: "SWACHHTA HI SEVA",
-    subTitle: "EK TAREEKH EK KALAK EK SAATH CAMPAIGN (01/10/2023)",
+    subTitle: "EK TAREEKH EK KALAK EK SAATH CAMPAIGN (01/10/2024)",
   },
 ];
 
