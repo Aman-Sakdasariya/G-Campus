@@ -227,20 +227,13 @@ function Footer({ NavLink, MoreOptionToggle, setMoreOptionToggle }) {
             {/* <span className="text-3xl text-gray-400 hover:text-blue-500 transition-all duration-500 hidden lg:block">G-Campus</span> */}
           </Link>
           <p className="h-full w-1/2 text-lg text-center text-gray-400 sm:ml-6 sm:mt-0 mt-4">
-            © {Date().slice(10, 15)} G-CAMPUS —
-            <a
-              href="https://twitter.com/ASK_DEVELOPERS"
-              className="text-gray-400 ml-1 hover:text-blue-500 font-semibold transition-all duration-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @ASK_DEVELOPERS
-            </a>
+            © {Date().slice(10, 15)} G-CAMPUS
+            
           </p>
           <span className="h-full w-1/4 inline-flex gap-3 sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-end">
             <a
               className="text-gray-400"
-              href="mailto:web.developers.2021.2024@gmail.com"
+              href="mailto:example@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -258,7 +251,7 @@ function Footer({ NavLink, MoreOptionToggle, setMoreOptionToggle }) {
             </a>
             <a
               className="ml-3 text-gray-400"
-              href="https://twitter.com/ASK_DEVELOPERS"
+              href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >

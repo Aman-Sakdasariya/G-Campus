@@ -82,7 +82,7 @@ function AboutUs() {
               </div>
               <div className="z-10 w-full lg:max-w-3xl lg:pl-4 lg:text-lg">
                 <img
-                  src="https://res.cloudinary.com/dbbfbpsc2/image/upload/v1664092344/saasblocks-tdg1/assets/penta_about_story.png"
+                  src="https://static.vecteezy.com/system/resources/previews/008/570/596/large_2x/portrait-asian-business-woman-with-crossed-arms-looking-at-the-camera-working-with-laptop-computer-for-accounting-financial-at-office-free-photo.jpg"
                   alt="people working in the office with a main person cross-armed on the right looking at the camera"
                   className="rounded-xl"
                 />
